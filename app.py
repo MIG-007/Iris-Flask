@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import pickle
-model = pickle.load(open('knn_classifier.pkl','rb'))
+model = pickle.load(open('dt_classifier.pkl','rb'))
 app = Flask(__name__)
 
 @app.route('/')
